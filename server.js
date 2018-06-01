@@ -31,7 +31,8 @@ app.use((request, response, next) => {
 
 // maintanence middle ware
 app.use((request, response, next) => {
-	response.render('maintanence.hbs')
+	next();
+	// response.render('maintanence.hbs')
 });
 
 app.get('/', (request, response) => {
